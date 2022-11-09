@@ -31,43 +31,18 @@ class LinkedList {
         Node second = new Node(2);
         Node third = new Node(3);
   
-        /* Three nodes have been allocated dynamically.
-          We have references to these three blocks as head,
-          second and third
+        
   
-          llist.head        second              third
-             |                |                  |
-             |                |                  |
-         +----+------+     +----+------+     +----+------+
-         | 1  | null |     | 2  | null |     |  3 | null |
-         +----+------+     +----+------+     +----+------+
-       */
-  
-        llist.head.next = second; // Link first node with
-                                  // the second node
+        llist.head.next = second; 
   
         /*  Now next of the first Node refers to the second.
         So they both are linked.
   
-         llist.head        second              third
-            |                |                  |
-            |                |                  |
-        +----+------+     +----+------+     +----+------+
-        | 1  |  o-------->| 2  | null |     |  3 | null |
-        +----+------+     +----+------+     +----+------+ */
+         
   
-        second.next
-            = third; // Link second node with the third node
+        second.next= third; // Link second node with the third node
   
-        /*  Now next of the second Node refers to third.  So
-        all three nodes are linked.
-  
-         llist.head        second              third
-            |                |                  |
-            |                |                  |
-        +----+------+     +----+------+     +----+------+
-        | 1  |  o-------->| 2  |  o-------->|  3 | null |
-        +----+------+     +----+------+     +----+------+ */
+
     }
 }
 
@@ -106,47 +81,13 @@ if __name__ == '__main__':
     second = Node(2)
     third = Node(3)
   
-    '''
-    Three nodes have been created.
-    We have references to these three blocks as head,
-    second and third
-  
-    llist.head        second              third
-         |                |                  |
-         |                |                  |
-    +----+------+     +----+------+     +----+------+
-    | 1  | None |     | 2  | None |     |  3 | None |
-    +----+------+     +----+------+     +----+------+
-    '''
+   
   
     llist.head.next = second  # Link first node with second
   
-    '''
-    Now next of first Node refers to second.  So they
-    both are linked.
-  
-    llist.head        second              third
-         |                |                  |
-         |                |                  |
-    +----+------+     +----+------+     +----+------+
-    | 1  |  o-------->| 2  | null |     |  3 | null |
-    +----+------+     +----+------+     +----+------+ 
-    '''
-  
+    
     second.next = third  # Link second node with the third node
   
-    '''
-    Now next of second Node refers to third.  So all three
-    nodes are linked.
-  
-    llist.head        second              third
-         |                |                  |
-         |                |                  |
-    +----+------+     +----+------+     +----+------+
-    | 1  |  o-------->| 2  |  o-------->|  3 | null |
-    +----+------+     +----+------+     +----+------+ 
-    '''
-
 
 
 Program 2:How to traverse Linked list
@@ -182,7 +123,7 @@ class LinkedList {
         }
     }
   
-    // Driver's code
+  
     public static void main(String[] args)
     {
         /* Start with the empty list. */
